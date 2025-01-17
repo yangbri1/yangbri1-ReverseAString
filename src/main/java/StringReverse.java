@@ -25,8 +25,8 @@ public class StringReverse {
 
         /* StringBuilder .reverse() method ... */
         /* https://stackoverflow.com/questions/7569335/reverse-a-string-in-java */
-        // create an instance of StringBuffer()
-        StringBuilder buffy = new StringBuilder();
+        // create an instance of StringBuffer() for String 'str'
+        StringBuilder buffy = new StringBuilder(str);
          
         // String revStr = buffy.reverse().toString();  // .toString() --- convers to String but will throw NullPointerException if instance DNE
         String revStr = String.valueOf(buffy.reverse());          // String.valueOf() --- converts to String format or returns "null" if instance DNE
